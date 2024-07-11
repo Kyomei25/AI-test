@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
         navList.classList.toggle('active');
     });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navList = document.getElementById('nav-list');
+    
+        menuToggle.addEventListener('click', function() {
+            navList.classList.toggle('active');
+        });
+    });
+
     // アコーディオンの動作
     const accordionItems = document.querySelectorAll('.accordion-item h3');
     accordionItems.forEach(item => {

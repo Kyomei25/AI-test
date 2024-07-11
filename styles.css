@@ -153,8 +153,39 @@ p, ul, a {
 }
 
 @media (max-width: 1024px) {
+    #navbar {
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
     .nav-list {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-list li a {
+        padding: 10px 15px;
+    }
+
+    .nav-list li .subtitle {
+        display: inline;
+        margin-left: 10px;
     }
 
     .menu-toggle {
