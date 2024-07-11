@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('DOMContentLoaded', function() {
         const menuToggle = document.getElementById('menu-toggle');
         const navList = document.getElementById('nav-list');
+        const body = document.body;
     
         menuToggle.addEventListener('click', function() {
             navList.classList.toggle('active');
+            body.classList.toggle('menu-open');
         });
     });
 
