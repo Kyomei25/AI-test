@@ -961,14 +961,14 @@ ul {
 }
 
 #ai-creators-intro {
-    
-    width: 90%;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1200px; /* または適切な最大幅 */
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    margin-bottom: 1em;
-    text-align: center; /* 文字を中央配置 */
+    box-sizing: border-box;
 }
 
 
@@ -986,14 +986,22 @@ ul {
 }
 
 .card {
-    background: #fff;
-    border-radius: 8px;
-    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* カードの最大幅を設定 */
     margin: 20px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center; /* 文字を中央配置 */
 }
-
+/* レスポンシブデザイン用 */
+@media (max-width: 767px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+}
 /* カルーセル */
 
 .carousel-container {
